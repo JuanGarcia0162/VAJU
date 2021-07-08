@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="img/Favicon.png">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>VAJU-PREMIUM</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <nav class="menu">
+        <label class="logo">VAJU-PREMIUM</label>
+        <ul class="menu__items">
+            <li class=""><a href="#">Inicio</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#garanty.">Garantia</a></li>
+            <li><span class="nav__btns">
+                    <i class="uil uil-moon change-theme" onclick="funcionImg();" id="theme-button"></i>
+                </span>
+            </li>
+        </ul>
+        <span class="btn__menu">
+            <i class="uil uil-bars"></i>
+        </span>
+
+    </nav>
+    <!--==================== HOME ====================-->
+    <section class="home" id="home">
+        <!-- <div class="home__container">
+            <div class="slide active">
+                <img src="/img/Banner (2).png" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/Banner (1).png" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/Banner (3).png" alt="">
+            </div>
+            <div class="navigation">
+                <i class="fas fa-chevron-left prev-btn"></i>
+                <i class="fas fa-chevron-right next-btn"></i>
+            </div>
+            <div class="navigation-visibility">
+                <div class="slide-icon active"></div>
+                <div class="slide-icon"></div>
+                <div class="slide-icon"></div>
+            </div>
+        </div> -->
+        <div class="slide-contenedor">
+            <div class="miSlider fade">
+                <img src="img/Banner (2).png" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="img/Banner (1).png" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="img/Banner (3).png" alt="">
+            </div>
+            <div class="direcciones">
+                <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+                <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+            </div>
+            <div class="barras">
+                <span class="barra active" onclick="posicionSlide(1)"></span>
+                <span class="barra" onclick="posicionSlide(2)"></span>
+                <span class="barra" onclick="posicionSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+    <!--==================== SERVICES ====================-->
+    <section class="cards section" id="services">
+        <div class="cards__container">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/Netflix.png">
+                </div>
+                <div class="contentBx">
+                    <h3>Netflix</h3>
+                    <h2 class="price">$12.000</h2>
+                    <a href="#" class="buy">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/DisneyB.png" id="foto">
+                </div>
+                <div class="contentBx">
+                    <h3>Disney</h3>
+                    <h2 class="price">$10.000</h2>
+                    <a href="#" class="buy">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/PrimeB.png" id="foto4">
+                </div>
+                <div class="contentBx">
+                    <h3>Prime Video</h3>
+                    <h2 class="price">$6.000</h2>
+                    <a href="#" class="buy">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/HBOMAXB.png" id="foto2">
+                </div>
+                <div class="contentBx">
+                    <h3>HBO MAX</h3>
+                    <h2 class="price">$8.000</h2>
+                    <a href="#" class="buy">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/Crunchyroll.png">
+                </div>
+                <div class="contentBx">
+                    <h3>Crunchyroll</h3>
+                    <h2 class="price">$10.000</h2>
+                    <a href="#" class="buy">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/Spotify.png">
+                </div>
+                <div class="contentBx">
+                    <h3>Spotify</h3>
+                    <h2 class="price">$11.000</h2>
+                    <a href="#" class="buy">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/YT.png">
+                </div>
+                <div class="contentBx">
+                    <h3>YT PREMIUM</h3>
+                    <h2 class="price">$11.000</h2>
+                    <a href="#" class="buy">Comprar</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/DeezerB.png" id="foto3">
+                </div>
+                <div class="contentBx">
+                    <h3>Deezer</h3>
+                    <h2 class="price">$11.000</h2>
+                    <a href="#" class="buy">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==================== BANNERS ====================-->
+
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-Up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
